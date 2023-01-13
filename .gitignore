@@ -1,0 +1,8 @@
+node_modules/
+.sass-cache/
+.DS_STORE
+cache/*
+dist/css/style.min.*
+dist/css/admin.min.*
+dist/js/script.min.*
+.vscode/
