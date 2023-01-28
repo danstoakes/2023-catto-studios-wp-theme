@@ -2,6 +2,7 @@ html {
 	body {
 		font-family: $garet-book;
 		font-size: 18px;
+		min-height: 100vh;
 	
 		h1, .h1, h2, .h2,  h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
 			color: $brand-secondary;
@@ -56,6 +57,20 @@ html {
 	
 		h6, .h6 {
 			font-size: 1.10rem;
+		}
+
+		main {
+			height: 100%;
+			min-height: inherit;
+
+			div#home_page {
+				background: $brand-secondary;
+				height: 100vh;
+
+				@media (min-width: #{$tablet}) {
+					background: linear-gradient(90deg, $brand-primary 50%, $brand-secondary 50%);
+				}
+			}
 		}
 	}
 }
